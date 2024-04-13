@@ -377,7 +377,33 @@ To do this, you will have to:
 
 Reach out to the instructor if you need help or get stuck. Good luck!
 
-## Wrap-Up
+# Part 4: Build a Simple REST API
+In this part of the tutorial, we will create a simple REST API using Flask that
+allows users to interact with the Chicago Public Schools data, without the 
+need for a web interface. This will be a do-it-yourself exercise, so you can
+apply what you've learned so far. You'll need to do the following
+
+- Create new routes in the `app.py` file to handle API requests.
+- `GET` requests to `/api/schools` should return a JSON response with all the schools.
+- `GET` requests to `/api/search` should return a JSON response with the information for a specific school by name.
+
+You may use `jsonify` to convert the data to JSON format, instead of returning a rendered HTML template.
+
+To test your API, you can use a tool like `curl` to make requests from the command line.
+
+Here are some examples:
+```bash
+curl http://localhost:5000/api/schools
+```
+
+```bash
+curl http://localhost:5000/api/search?name=carnegie
+```
+
+
+
+
+# Wrap-Up
 In this tutorial, you learned how to create a web server using Flask and interact
 with a SQLite database. You created a simple web server that displays information
 about Chicago Public Schools and allows users to search for schools by name.
